@@ -9,9 +9,96 @@ export default function HeroSection({ data }) {
   const year = date.getFullYear();
 
   return (
-    <section className="md-px-6 relative flex min-h-screen flex-col items-center justify-center overflow-hidden text-center font-[Playfair_Display]">
-      {/* Nội dung text phía trên */}
+    <section
+      style={{
+        position: 'relative',
+      }}
+      className="md-px-6 relative flex min-h-screen flex-col items-center justify-center overflow-hidden pb-10 text-center font-[Playfair_Display]"
+    >
+      <div
+        style={{
+          position: 'absolute',
+          opacity: 0.7,
+          left: '-80px',
+          width: '30%',
+          top: 0,
+        }}
+      >
+        <img src="/assets/Asset 10.png" />
+      </div>
+      <div
+        style={{
+          position: 'absolute',
+          opacity: 0.7,
+          width: '30%',
+          top: 0,
+          left: '-50px',
+        }}
+      >
+        <img src="/assets/Asset 11.png" />
+      </div>
 
+      <div
+        style={{
+          position: 'absolute',
+          top: '-25px',
+          right: 0,
+          opacity: 0.7,
+        }}
+      >
+        <img src="/assets/Asset 6.png" />
+      </div>
+
+      <div
+        style={{
+          position: 'absolute',
+          opacity: 0.7,
+          width: '30%',
+          top: 0,
+          right: '-35px',
+        }}
+      >
+        <img src="/assets/golden-line/Asset 3.png" />
+      </div>
+
+      <div
+        style={{
+          position: 'absolute',
+          opacity: 0.7,
+          width: '20%',
+          top: 0,
+          right: '-45px',
+        }}
+      >
+        <img src="/assets/golden-line/Asset 2.png" />
+      </div>
+
+      <div
+        style={{
+          position: 'absolute',
+          top: '-25px',
+          left: '-85px',
+          width: '93%',
+          opacity: 0.7,
+        }}
+      >
+        <img src="/assets/Asset 3.png" />
+      </div>
+
+      <div
+        style={{
+          position: 'absolute',
+          left: -54,
+          bottom: -1,
+          zIndex: -1,
+          width: '100%',
+          transform: 'scaleY(-1)',
+        }}
+      >
+        <img src="/assets/Asset 9.png" />
+      </div>
+
+      {/* Nội dung text phía trên */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -20,8 +107,9 @@ export default function HeroSection({ data }) {
         style={{ width: '85%' }}
       >
         {/* SAVE THE DATE */}
-        <p className="mb-8 mt-10 font-['SVN-Desire'] text-3xl">Save The Date</p>
+        <p className="mb-8 mt-16 font-['SVN-Desire'] text-4xl">Save The Date</p>
 
+        <br />
         {/* Tên cô dâu & chú rể */}
         <h1 className="text-left font-['SVN-VeryBerry'] text-5xl leading-tight">{data.groom}</h1>
         <p className="mb-1 mt-1 font-['SVN-VeryBerry'] text-4xl">&</p>
@@ -54,23 +142,39 @@ export default function HeroSection({ data }) {
       </motion.div>
 
       <div className="relative mt-5 flex w-full justify-center">
-        <div
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
           style={{
             width: '80%',
           }}
           className="relative max-w-md overflow-hidden rounded-[44px] border-2 border-[#c9a96e] shadow-md md:max-w-lg lg:max-w-xl"
         >
-          <img
+          <motion.img
             style={{
               height: 500,
             }}
             src={data.heroImage}
             alt="Ảnh cưới"
             className="h-auto w-full rounded-[40px] object-cover"
+            initial={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 2, ease: 'easeOut' }}
           />
+        </motion.div>
+
+        <div
+          style={{
+            position: 'absolute',
+            bottom: -20,
+            right: 0,
+            width: '35%',
+          }}
+        >
+          <img src="/assets/Asset 4.png" />
         </div>
       </div>
-      {/* <div className="absolute bottom-0 left-0 h-32 w-full bg-gradient-to-t from-[#fdfaf5] to-transparent"></div> */}
     </section>
   );
 }

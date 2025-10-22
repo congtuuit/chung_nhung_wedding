@@ -1,34 +1,65 @@
 'use client';
 import { useState } from 'react';
+import FadeAnimation from './FadeAnimation';
 
 export default function GiftSection({ content }) {
   const [showQR, setShowQR] = useState(false);
 
   return (
-    <section className="my-8 text-center">
+    <section className="relative py-8 text-center">
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          bottom: -1,
+          zIndex: -1,
+          width: '100%',
+          transform: 'scaleY(-1) scaleX(-1)',
+        }}
+      >
+        <img src="/assets/Asset 6.png" />
+      </div>
+
+      <div
+        style={{
+          position: 'absolute',
+          right: -128,
+          bottom: 40,
+          width: '60%',
+          zIndex: -1,
+          transform: 'scaleX(-1) rotate(270deg) ',
+        }}
+      >
+        <img src="/assets/Asset 3.png" />
+      </div>
+
       {/* decorative line */}
       <div className="m-auto mb-10 w-[80%] pl-2 pr-5">
         <img src="/assets/line_div4.png" alt="decor line" />
       </div>
 
-      {/* button */}
-      <div className="mt-3">
-        <button
-          onClick={() => setShowQR(true)}
-          style={{
-            backgroundColor: '#384b2d',
-            color: 'white',
-            width: '60%',
-          }}
-          className="mb-10 inline-block rounded-full border border-transparent px-4 py-3 uppercase transition hover:scale-105 hover:bg-[#4a6439]"
-        >
-          <b>Gửi mừng cưới</b>
-        </button>
-      </div>
+      <FadeAnimation>
+        {/* button */}
+        <div className="mt-3">
+          <button
+            onClick={() => setShowQR(true)}
+            style={{
+              backgroundColor: '#384b2d',
+              color: 'white',
+              width: '60%',
+            }}
+            className="mb-10 inline-block rounded-full border border-transparent px-4 py-3 uppercase transition hover:scale-105 hover:bg-[#4a6439]"
+          >
+            <b>Gửi mừng cưới</b>
+          </button>
+        </div>
+      </FadeAnimation>
 
-      {/* text */}
-      <p className="mt-4 pb-10 font-['SVN-Agency'] text-4xl">Rất hân hạnh được đón tiếp</p>
-      <p className="pb-20 font-['SVN-Helga'] text-5xl">Thank you</p>
+      <FadeAnimation>
+        {/* text */}
+        <p className="mt-4 pb-10 font-['SVN-Agency'] text-4xl">Rất hân hạnh được đón tiếp</p>
+        <p className="pb-20 font-['SVN-Helga'] text-5xl">Thank you</p>
+      </FadeAnimation>
 
       {/* popup QR */}
       {showQR && (

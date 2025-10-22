@@ -1,10 +1,83 @@
 'use client';
 import { motion } from 'framer-motion';
+import FadeAnimation from './FadeAnimation';
 
 export default function FamilySection({ data, content }) {
   return (
-    <section>
-      <div className="text-[#2f3a21 my-10 mt-20 grid grid-cols-2 text-center">
+    <section className="position-relative">
+      <div
+        style={{
+          position: 'absolute',
+          left: -47,
+          zIndex: -1,
+        }}
+      >
+        <img src="/assets/Asset 9.png" />
+      </div>
+
+      <div
+        style={{
+          position: 'absolute',
+          width: '4px',
+          top: 15,
+          left: 20,
+          zIndex: -1,
+        }}
+      >
+        <img src="/assets/golden-line/Asset 8.png" />
+      </div>
+
+      <div
+        style={{
+          position: 'absolute',
+          width: '50%',
+          top: 30,
+          left: 5,
+          zIndex: -1,
+        }}
+      >
+        <img src="/assets/golden-line/Asset 9.png" />
+      </div>
+
+      <div
+        style={{
+          position: 'absolute',
+          width: '25%',
+          top: -65,
+          right: 0,
+          zIndex: -1,
+          transform: 'rotate(-100deg) scaleX(-1)',
+        }}
+      >
+        <img src="/assets/Asset 2.png" />
+      </div>
+
+      <div
+        style={{
+          position: 'absolute',
+          width: '50%',
+          bottom: -10,
+          right: 0,
+          zIndex: -1,
+          transform: 'scaleX(-1)',
+        }}
+      >
+        <img src="/assets/Asset 7.png" />
+      </div>
+      <div
+        style={{
+          position: 'absolute',
+          width: '50%',
+          bottom: -300,
+          right: 0,
+          zIndex: -1,
+          transform: 'scaleX(-1) scaleY(-1)',
+        }}
+      >
+        <img src="/assets/Asset 7.png" />
+      </div>
+
+      <div className="grid grid-cols-2 pt-16 text-center">
         {/* Nhà trai */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -46,48 +119,55 @@ export default function FamilySection({ data, content }) {
         </motion.div>
       </div>
 
-      <p className="text-center">Trân Trọng Kính Mời Tham Dự Lễ Thành Hôn Của</p>
-      <div className='mt-10 text-center font-["SVN-VeryBerry"] text-5xl'>
-        <h3>{content.groomFullName}</h3>
-        <p className="mb-1 mt-1">&</p>
-        <h3>{content.brideFullName}</h3>
-      </div>
-      <div className="mt-10 flex justify-center">
-        <img src="./assets/line_div.png" width={'65%'} />
-      </div>
+      <FadeAnimation>
+        <p className="pt-10 text-center">Trân Trọng Kính Mời Tham Dự Lễ Thành Hôn Của</p>
+        <div className='mt-10 text-center font-["SVN-VeryBerry"] text-5xl'>
+          <h3>{content.groomFullName}</h3>
+          <p className="mb-1 mt-1">&</p>
+          <h3>{content.brideFullName}</h3>
+        </div>
+        <div className="mt-10 flex justify-center">
+          <img src="./assets/line_div.png" width={'65%'} />
+        </div>
+      </FadeAnimation>
 
       <div className="my-10 grid grid-cols-2 items-start justify-items-center gap-8 pl-2 pr-2">
         {/* Cột trái - Chú Rể */}
-        <div className="flex flex-col items-center">
-          <div
-            className="overflow-hidden rounded-[15px] border-2 border-[#c9a96e] shadow-md"
-            style={{
-              width: '75%',
-            }}
-          >
-            <img src={content.groomPicture} alt="Chú Rể" className="h-auto w-[100%] max-w-[400px] object-contain" />
+
+        <FadeAnimation>
+          <div className="flex flex-col items-center">
+            <div
+              className="overflow-hidden rounded-[15px] border-2 border-[#c9a96e] shadow-md"
+              style={{
+                width: '75%',
+              }}
+            >
+              <img src={content.groomPicture} alt="Chú Rể" className="h-auto w-[100%] max-w-[400px] object-contain" />
+            </div>
+            <div className="mt-2 w-[85%]">
+              <img src="/assets/line-x.png" />
+            </div>
+            <h3 className="mt-2 font-['SVN-Amperzand'] text-3xl">Chú Rể</h3>
           </div>
-          <div className="mt-2 w-[85%]">
-            <img src="/assets/line-x.png" />
-          </div>
-          <h3 className="mt-2 font-['SVN-Amperzand'] text-3xl">Chú Rể</h3>
-        </div>
+        </FadeAnimation>
 
         {/* Cột phải - Cô Dâu */}
-        <div className="flex flex-col items-center">
-          <div
-            className="overflow-hidden rounded-[15px] border-2 border-[#c9a96e] shadow-md"
-            style={{
-              width: '75%',
-            }}
-          >
-            <img src={content.bridePicture} alt="Cô Dâu" className="h-auto w-[100%] max-w-[400px] object-contain" />
+        <FadeAnimation>
+          <div className="flex flex-col items-center">
+            <div
+              className="overflow-hidden rounded-[15px] border-2 border-[#c9a96e] shadow-md"
+              style={{
+                width: '75%',
+              }}
+            >
+              <img src={content.bridePicture} alt="Cô Dâu" className="h-auto w-[100%] max-w-[400px] object-contain" />
+            </div>
+            <div className="mt-2 w-[85%]">
+              <img src="/assets/line-x.png" />
+            </div>
+            <h3 className="mt-2 font-['SVN-Amperzand'] text-3xl">Cô Dâu</h3>
           </div>
-          <div className="mt-2 w-[85%]">
-            <img src="/assets/line-x.png" />
-          </div>
-          <h3 className="mt-2 font-['SVN-Amperzand'] text-3xl">Cô Dâu</h3>
-        </div>
+        </FadeAnimation>
       </div>
     </section>
   );
