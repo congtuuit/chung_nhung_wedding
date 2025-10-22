@@ -1,0 +1,30 @@
+{
+  "groom": "Văn Chung",
+  "bride": "Hồng Nhung",
+  "weddingDate": "2025-11-08T18:00:00",
+  "timeText": "18:00",
+  "venue": {
+    "name": "Trung Tâm Hội Nghị Tiệc Cưới Đại Hỷ Palace",
+    "address": "56 Lý Chiêu Hoàng, Phường Bình Phú, TPHCM",
+    "mapUrl": "https://maps.google.com/?q=56+L%C3%BD+Chi%E1%BB%81u+Ho%C3%A0ng"
+  },
+  "family": {
+    "groom": {
+      "father" :"Ông Trần Văn Mạnh",
+      "mother" :"Bà Lê Thị Tâm",
+      "address": "99/50 Ấp 31, Xã Bình Lợi, TP.HCM"
+    },
+    "bride": {
+      "father" :"",
+      "mother" :"Trần Thị Thu Trang",
+      "address": "136 Trịnh Như Khuê, Bình Chánh, TP.HCM"
+    }
+  },
+  "album": [
+    "/images/album1.jpg",
+    "/images/album2.jpg",
+    "/images/album3.jpg",
+    "/images/album4.jpg"
+  ],
+  "heroImage": "/images/1.jpg"
+}
