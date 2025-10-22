@@ -9,13 +9,18 @@ import content from '../content.json';
 export default function Home() {
   return (
     <main className="min-h-screen bg-[url('/images/bg-pattern.png')] bg-cover font-serif">
-      <div className="mx-auto max-w-3xl">
+      <div
+        className="mx-auto max-w-3xl"
+        style={{
+          maxWidth: '500px',
+        }}
+      >
         <HeroSection data={content} />
-        <FamilyInfo data={content.family} />
-        <CalendarSection date={content.weddingDate} timeText={content.timeText} venue={content.venue} />
-        <MapSection url={content.venue.mapUrl} />
+        <FamilyInfo data={content.family} content={content} />
+        <CalendarSection weddingDate={content.weddingDate} date={content.weddingDateTime} timeText={content.timeText} venue={content.venue} />
+        <MapSection content={content} url={content.venue.mapUrl} />
         <AlbumSection images={content.album} />
-        <GiftSection />
+        <GiftSection content={content}/>
       </div>
     </main>
   );

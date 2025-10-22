@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 
 export default function HeroSection({ data }) {
-  const date = new Date(data.weddingDate);
+  const date = new Date(data.weddingDateTime);
   const day = date.getDate().toString().padStart(2, '0');
   const month = (date.getMonth() + 1).toString().padStart(2, '0');
   const year = date.getFullYear();

@@ -1,30 +1,66 @@
 {
   "groom": "Văn Chung",
+  "groomFullName": "Trần Văn Chung",
+  "groomPicture": "/images/2.webp",
+
   "bride": "Hồng Nhung",
-  "weddingDate": "2025-11-08T18:00:00",
+  "brideFullName": "Nguyễn Thụy Hồng Nhung",
+  "bridePicture": "/images/3.webp",
+
+  "weddingDateTime": "2025-11-08T18:00:00",
+  "weddingDate": "Tháng 11.2025",
   "timeText": "18:00",
   "venue": {
-    "name": "Trung Tâm Hội Nghị Tiệc Cưới Đại Hỷ Palace",
-    "address": "56 Lý Chiêu Hoàng, Phường Bình Phú, TPHCM",
-    "mapUrl": "https://maps.google.com/?q=56+L%C3%BD+Chi%E1%BB%81u+Ho%C3%A0ng"
+    "name": "Trung Tâm Hội Nghị Yến Tiệc Đại Hỷ Palace",
+    "address": "156 Đ.Lý Chiêu Hoàng, Phường Bình Phú, TP.HCM",
+    "openMapUrl": "https://maps.app.goo.gl/uWJ3TmFV1hNinVTJ9",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d582.7021934787155!2d106.62419794700548!3d10.739301620706355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752dd75f2ff31b%3A0xcc8f2625834b083c!2sDai%20Hy%20Palace%20Wedding%20Conference%20Center!5e0!3m2!1sen!2s!4v1761152084713!5m2!1sen!2s"
   },
   "family": {
     "groom": {
-      "father" :"Ông Trần Văn Mạnh",
-      "mother" :"Bà Lê Thị Tâm",
-      "address": "99/50 Ấp 31, Xã Bình Lợi, TP.HCM"
+      "father": "Ông Trần Văn Mạnh",
+      "mother": "Bà Lê Thị Tâm",
+      "address1": "G9/50 Ấp 31,",
+      "address2": "Xã Bình Lợi, TP.HCM"
     },
     "bride": {
-      "father" :"",
-      "mother" :"Trần Thị Thu Trang",
-      "address": "136 Trịnh Như Khuê, Bình Chánh, TP.HCM"
+      "father": "",
+      "mother": "Trần Thị Thu Trang",
+      "address1": "136 Trịnh Như Khuê,",
+      "address2": "Xã Bình Chánh, TP.HCM"
     }
   },
   "album": [
-    "/images/album1.jpg",
-    "/images/album2.jpg",
-    "/images/album3.jpg",
-    "/images/album4.jpg"
+    "/images/album/DSC_1859.webp",
+    "/images/album/DSC_1913.webp",
+    "/images/album/DSC_1943.webp",
+    "/images/album/DSC_2072.webp",
+    "/images/album/DSC_2147.webp",
+    "/images/album/DSC_2152.webp",
+    "/images/album/DSC_2260.webp",
+    "/images/album/DSC_2396.webp",
+    "/images/album/DSC_2406.webp",
+    "/images/album/DSC_2512.webp",
+    "/images/album/DSC_2610.webp",
+    "/images/album/DSC_2719.webp",
+    "/images/album/DSC_2765.webp",
+    "/images/album/DSC_2768.webp",
+    "/images/album/DSC_2779.webp",
+    "/images/album/DSC_2799.webp",
+    "/images/album/DSC_2866.webp",
+    "/images/album/DSC_2894.webp",
+    "/images/album/DSC_2906.webp",
+    "/images/album/DSC_2937.webp",
+    "/images/album/DSC_2951.webp",
+    "/images/album/DSC_3034.webp",
+    "/images/album/DSC_3072.webp",
+    "/images/album/DSC_3192.webp"
   ],
-  "heroImage": "/images/1.jpg"
+  "heroImage": "/images/1.webp",
+  "bankInfo": {
+    "image": "/images/qr-bank.jpg",
+    "number": "0123456789",
+    "bankName": "Vietcombank",
+    "holderName": "Trần Văn Chung"
+  }
 }
