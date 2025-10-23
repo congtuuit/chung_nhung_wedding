@@ -4,7 +4,11 @@ import FadeAnimation from './FadeAnimation';
 
 export default function FamilySection({ data, content }) {
   return (
-    <section className="position-relative">
+    <section
+      className="position-relative"
+      style={{
+      }}
+    >
       <div
         style={{
           position: 'absolute',
@@ -14,7 +18,6 @@ export default function FamilySection({ data, content }) {
       >
         <img src="/assets/Asset 9.png" />
       </div>
-
       <div
         style={{
           position: 'absolute',
@@ -26,7 +29,6 @@ export default function FamilySection({ data, content }) {
       >
         <img src="/assets/golden-line/Asset 8.png" />
       </div>
-
       <div
         style={{
           position: 'absolute',
@@ -38,20 +40,18 @@ export default function FamilySection({ data, content }) {
       >
         <img src="/assets/golden-line/Asset 9.png" />
       </div>
-
       <div
         style={{
           position: 'absolute',
-          width: '25%',
-          top: -65,
-          right: 0,
+          width: '20%',
+          top: -40,
+          right: 30,
           zIndex: -1,
           transform: 'rotate(-100deg) scaleX(-1)',
         }}
       >
         <img src="/assets/Asset 2.png" />
       </div>
-
       <div
         style={{
           position: 'absolute',
@@ -76,7 +76,6 @@ export default function FamilySection({ data, content }) {
       >
         <img src="/assets/Asset 7.png" />
       </div>
-
       <div className="grid grid-cols-2 pt-16 text-center">
         {/* Nhà trai */}
         <motion.div
@@ -118,7 +117,6 @@ export default function FamilySection({ data, content }) {
           <p className="font-['SVN-Times'] text-lg">{data.bride.address2}</p>
         </motion.div>
       </div>
-
       <FadeAnimation>
         <p className="pt-10 text-center">Trân Trọng Kính Mời Tham Dự Lễ Thành Hôn Của</p>
         <div className='mt-10 text-center font-["SVN-VeryBerry"] text-5xl'>
@@ -130,7 +128,6 @@ export default function FamilySection({ data, content }) {
           <img src="./assets/line_div.png" width={'65%'} />
         </div>
       </FadeAnimation>
-
       <div className="my-10 grid grid-cols-2 items-start justify-items-center gap-8 pl-2 pr-2">
         {/* Cột trái - Chú Rể */}
 

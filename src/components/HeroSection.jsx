@@ -12,9 +12,11 @@ export default function HeroSection({ data }) {
     <section
       style={{
         position: 'relative',
+        overflow: 'hidden'
       }}
       className="md-px-6 relative flex min-h-screen flex-col items-center justify-center overflow-hidden pb-10 text-center font-[Playfair_Display]"
     >
+
       <div
         style={{
           position: 'absolute',

@@ -5,6 +5,7 @@ import AlbumSection from '../components/AlbumSection';
 import MapSection from '../components/MapSection';
 import GiftSection from '../components/GiftSection';
 import content from '../content.json';
+import MusicPlayer from '../components/MusicPlayer';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <MapSection content={content} url={content.venue.mapUrl} />
         <AlbumSection images={content.album} />
         <GiftSection content={content}/>
+        <MusicPlayer url={content.mp3Url}/>
       </div>
     </main>
   );

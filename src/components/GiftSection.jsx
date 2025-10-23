@@ -6,7 +6,9 @@ export default function GiftSection({ content }) {
   const [showQR, setShowQR] = useState(false);
 
   return (
-    <section className="relative py-8 text-center">
+    <section className="relative py-8 text-center" style={{
+      overflow: "hidden"
+    }}>
       <div
         style={{
           position: 'absolute',
@@ -23,11 +25,11 @@ export default function GiftSection({ content }) {
       <div
         style={{
           position: 'absolute',
-          right: -128,
-          bottom: 40,
+          right: -50,
+          bottom: 50,
           width: '60%',
           zIndex: -1,
-          transform: 'scaleX(-1) rotate(270deg) ',
+          transform: 'scaleX(-1) rotate(290deg) ',
         }}
       >
         <img src="/assets/Asset 3.png" />
