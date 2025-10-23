@@ -37,7 +37,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="relative min-h-screen bg-[url('/images/bg-pattern.png')] bg-cover font-serif">
+    <main className="relative min-h-screen bg-cover font-serif">
       <div className="mx-auto" style={{ maxWidth: '500px' }}>
         <HeroSection data={content} startAnimation={loaderDone}/>
         <FamilyInfo data={content.family} content={content} />
