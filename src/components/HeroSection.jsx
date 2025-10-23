@@ -77,7 +77,7 @@ export default function HeroSection({ data, startAnimation }) {
 
       <div
         style={{
-          minHeight: '460px',
+          minHeight: '320px',
         }}
       >
         {/* Nội dung chữ chính */}
