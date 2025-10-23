@@ -16,8 +16,9 @@ export default function Home() {
   const [autoPlayMp3, setAutoPlayMp3] = useState(false);
 
   useEffect(() => {
-    // preload ảnh album
     const preloadImages = async () => {
+      const startTime = Date.now(); // bắt đầu đếm thời gian
+
       const promises = content.album.map(
         (src) =>
           new Promise((resolve) => {
@@ -27,25 +28,32 @@ export default function Home() {
             img.onerror = resolve;
           })
       );
+
       await Promise.all(promises);
+
+      const elapsed = Date.now() - startTime;
+      const minDelay = 1200; // tối thiểu 1.2 giây
+      const remaining = Math.max(0, minDelay - elapsed);
+
       setTimeout(() => {
         setLoaderDone(true);
         setAutoPlayMp3(true);
-      }, 100);
+      }, remaining);
     };
+
     preloadImages();
   }, []);
 
   return (
     <main className="relative min-h-screen bg-cover font-serif">
       <div className="mx-auto" style={{ maxWidth: '500px' }}>
-        <HeroSection data={content} startAnimation={loaderDone}/>
+        <HeroSection data={content} startAnimation={loaderDone} />
         <FamilyInfo data={content.family} content={content} />
         <CalendarSection weddingDate={content.weddingDate} date={content.weddingDateTime} timeText={content.timeText} venue={content.venue} />
         <MapSection content={content} url={content.venue.mapUrl} />
         <AlbumSection images={content.album} />
         <GiftSection content={content} />
-        <MusicPlayer url={content.mp3Url} autoPlay={autoPlayMp3}/>
+        <MusicPlayer url={content.mp3Url} autoPlay={autoPlayMp3} />
       </div>
 
       {/* Overlay loader */}
