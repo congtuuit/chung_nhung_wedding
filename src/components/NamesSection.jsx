@@ -25,7 +25,7 @@ export default function NamesSection({ data, startAnimation = false, time = 0 })
     ));
 
   return (
-    <div className="relative z-10" style={{ width: '85%' }}>
+    <div className="relative z-10" style={{ width: '100%' }}>
       <h1 className="text-left font-['SVN-VeryBerry'] text-5xl leading-tight">
         {pullDownLetter(data.groom)}
       </h1>

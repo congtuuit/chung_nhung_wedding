@@ -118,10 +118,10 @@ export default function FamilySection({ data, content }) {
       </div>
       <FadeAnimation>
         <p className="pt-10 text-center">Trân Trọng Kính Mời Tham Dự Lễ Thành Hôn Của</p>
-        <div className='mt-10 text-center font-["SVN-VeryBerry"] text-5xl'>
-          <h3>{content.groomFullName}</h3>
+        <div className='mt-10 text-center font-["SVN-VeryBerry"] text-5xl full-name'>
+          <h3 className='groom'>{content.groomFullName}</h3>
           <p className="mb-1 mt-1">&</p>
-          <h3>{content.brideFullName}</h3>
+          <h3 className='bride'>{content.brideFullName}</h3>
         </div>
         <div className="mt-10 flex justify-center">
           <img src="./assets/line_div.png" width={'65%'} />

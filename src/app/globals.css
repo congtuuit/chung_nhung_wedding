@@ -337,6 +337,10 @@ body {
   .text-wrap {
     font-size: 1.1rem;
   }
+
+  .full-name {
+    font-size: 2.5rem;
+  }
 }
 
 /* Điện thoại nhỏ (iPhone SE, Galaxy A0x) */
@@ -351,8 +355,12 @@ body {
   .brig-bg {
     bottom: -13rem !important;
   }
-   .text-wrap {
+  .text-wrap {
     font-size: 1rem;
+  }
+
+  .full-name {
+    font-size: 2rem;
   }
 }
 
@@ -360,5 +368,8 @@ body {
 @media screen and (max-width: 320px) {
   .brig-bg {
     bottom: -11rem !important;
+  }
+  .full-name {
+    font-size: 1.5rem;
   }
 }
