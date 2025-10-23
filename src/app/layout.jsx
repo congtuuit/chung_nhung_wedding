@@ -30,7 +30,7 @@ export const metadata = {
     images: [`${BASE_URL}/images/album/compressed/DSC_2072.webp`],
   },
   icons: {
-    icon: '/assets/heart.png',
+    icon: './assets/heart.png',
   },
 };
 
@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
           type="font/woff2"
           crossOrigin="anonymous"
         />
-        <link rel="icon" href="/assets/heart.png" type="image/png" />
+        <link rel="icon" href="./assets/heart.png" type="image/png" />
       </head>
       <body>{children}</body>
     </html>

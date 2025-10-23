@@ -35,28 +35,28 @@ export default function HeroSection({ data, startAnimation }) {
       style={{
         position: 'relative',
         overflow: 'hidden',
-        minHeight: "1015px"
+        minHeight: '1015px',
       }}
       className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden pb-10 text-center font-[Playfair_Display]"
     >
       {/* Các hình nền trang trí */}
       <div style={{ position: 'absolute', opacity: 0.7, left: '-80px', width: '30%', top: 0 }}>
-        <img src="/assets/Asset 10.png" />
+        <img src="./assets/Asset 10.png" />
       </div>
       <div style={{ position: 'absolute', opacity: 0.7, width: '30%', top: 0, left: '-50px' }}>
-        <img src="/assets/Asset 11.png" />
+        <img src="./assets/Asset 11.png" />
       </div>
       <div style={{ position: 'absolute', top: '-25px', right: 0, opacity: 0.7 }}>
-        <img src="/assets/Asset 6.png" />
+        <img src="./assets/Asset 6.png" />
       </div>
       <div style={{ position: 'absolute', opacity: 0.7, width: '30%', top: 0, right: '-35px' }}>
-        <img src="/assets/golden-line/Asset 3.png" />
+        <img src="./assets/golden-line/Asset 3.png" />
       </div>
       <div style={{ position: 'absolute', opacity: 0.7, width: '20%', top: 0, right: '-45px' }}>
-        <img src="/assets/golden-line/Asset 2.png" />
+        <img src="./assets/golden-line/Asset 2.png" />
       </div>
       <div style={{ position: 'absolute', top: '-25px', left: '-85px', width: '93%', opacity: 0.7 }}>
-        <img src="/assets/Asset 3.png" />
+        <img src="./assets/Asset 3.png" />
       </div>
       <div
         style={{
@@ -68,8 +68,12 @@ export default function HeroSection({ data, startAnimation }) {
           transform: 'scaleY(-1)',
         }}
       >
-        <img src="/assets/Asset 9.png" />
+        <img src="./assets/Asset 9.png" />
       </div>
+
+      <motion.div initial={{ opacity: 0, y: 40 }} animate={fadeUp} className="relative" style={{ width: '100%' }}>
+        <p className="mb-8 mt-16 font-['SVN-Desire'] text-4xl">Save The Date</p>
+      </motion.div>
 
       <div
         style={{
@@ -78,8 +82,6 @@ export default function HeroSection({ data, startAnimation }) {
       >
         {/* Nội dung chữ chính */}
         <motion.div initial={{ opacity: 0, y: 40 }} animate={fadeUp} className="relative z-10" style={{ width: '85%' }}>
-          <p className="mb-8 mt-16 font-['SVN-Desire'] text-4xl">Save The Date</p>
-
           <h1 className="text-left font-['SVN-VeryBerry'] text-5xl leading-tight">{data.groom}</h1>
           <p className="mb-1 mt-1 font-['SVN-VeryBerry'] text-4xl">&</p>
           <h1 className="text-right font-['SVN-VeryBerry'] text-5xl leading-tight">{data.bride}</h1>
@@ -131,7 +133,7 @@ export default function HeroSection({ data, startAnimation }) {
         </motion.div>
 
         <div style={{ position: 'absolute', bottom: -20, right: 0, width: '35%' }}>
-          <img src="/assets/Asset 4.png" />
+          <img src="./assets/Asset 4.png" />
         </div>
       </div>
     </section>

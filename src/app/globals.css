@@ -298,3 +298,61 @@ body {
 .animate-right-close {
   animation: rightClose 1s forwards ease-in-out;
 }
+
+@media screen and (max-width: 480px) {
+  /* CSS rules to apply when the screen width is 768px or less */
+  .family-line img {
+    width: 3px;
+    height: 60px;
+    top: 15;
+    left: 20;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .brig-bg {
+    bottom: -19rem !important;
+  }
+}
+
+/* Tablet dọc / phablet lớn */
+@media screen and (max-width: 768px) {
+  .brig-bg {
+    bottom: -19rem !important;
+  }
+}
+
+/* Điện thoại lớn (Pro Max, Fold, Note...) */
+@media screen and (max-width: 540px) {
+  .brig-bg {
+    bottom: -19rem !important;
+  }
+}
+
+/* Điện thoại phổ biến (iPhone 12/13/14, Galaxy S series) */
+@media screen and (max-width: 480px) {
+  .brig-bg {
+    bottom: -18rem !important;
+  }
+}
+
+/* Điện thoại nhỏ (iPhone SE, Galaxy A0x) */
+@media screen and (max-width: 414px) {
+  .brig-bg {
+    bottom: -15rem !important;
+  }
+}
+
+/* Mini phone (Jelly 2, Unihertz Atom) */
+@media screen and (max-width: 360px) {
+  .brig-bg {
+    bottom: -13rem !important;
+  }
+}
+
+/* Cực nhỏ – thấp nhất (320px, chuẩn tối thiểu web mobile) */
+@media screen and (max-width: 320px) {
+  .brig-bg {
+    bottom: -11rem !important;
+  }
+}

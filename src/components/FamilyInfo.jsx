@@ -4,22 +4,19 @@ import FadeAnimation from './FadeAnimation';
 
 export default function FamilySection({ data, content }) {
   return (
-    <section
-      className="position-relative"
-      style={{
-      }}
-    >
+    <section className="position-relative" style={{}}>
       <div
         style={{
           position: 'absolute',
-          width: "100%",
-          left: -55,
+          width: '95%',
+          left: -42,
           zIndex: -1,
         }}
       >
-        <img src="/assets/Asset 9.png" />
+        <img src="./assets/Asset 9.png" />
       </div>
       <div
+        className="family-line"
         style={{
           position: 'absolute',
           width: '4px',
@@ -28,7 +25,7 @@ export default function FamilySection({ data, content }) {
           zIndex: -1,
         }}
       >
-        <img src="/assets/golden-line/Asset 8.png" />
+        <img src="./assets/golden-line/Asset 8.png" />
       </div>
       <div
         style={{
@@ -39,7 +36,7 @@ export default function FamilySection({ data, content }) {
           zIndex: -1,
         }}
       >
-        <img src="/assets/golden-line/Asset 9.png" />
+        <img src="./assets/golden-line/Asset 9.png" />
       </div>
       <div
         style={{
@@ -51,7 +48,7 @@ export default function FamilySection({ data, content }) {
           transform: 'rotate(-100deg) scaleX(-1)',
         }}
       >
-        <img src="/assets/Asset 2.png" />
+        <img src="./assets/Asset 2.png" />
       </div>
       <div
         style={{
@@ -63,19 +60,20 @@ export default function FamilySection({ data, content }) {
           transform: 'scaleX(-1)',
         }}
       >
-        <img src="/assets/Asset 7.png" />
+        <img src="./assets/Asset 7.png" />
       </div>
       <div
+        className="brig-bg"
         style={{
           position: 'absolute',
           width: '50%',
-          bottom: -300,
+          bottom: -240,
           right: 0,
           zIndex: -1,
           transform: 'scaleX(-1) scaleY(-1)',
         }}
       >
-        <img src="/assets/Asset 7.png" />
+        <img src="./assets/Asset 7.png" />
       </div>
       <div className="grid grid-cols-2 pt-16 text-center">
         {/* Nhà trai */}
@@ -129,7 +127,7 @@ export default function FamilySection({ data, content }) {
           <img src="./assets/line_div.png" width={'65%'} />
         </div>
       </FadeAnimation>
-      <div className="my-10 grid grid-cols-2 items-start justify-items-center gap-8 pl-2 pr-2">
+      <div className="my-8 grid grid-cols-2 items-start justify-items-center pl-2 pr-2">
         {/* Cột trái - Chú Rể */}
 
         <FadeAnimation>
@@ -137,13 +135,13 @@ export default function FamilySection({ data, content }) {
             <div
               className="overflow-hidden rounded-[15px] border-2 border-[#c9a96e] shadow-md"
               style={{
-                width: '75%',
+                width: '80%',
               }}
             >
               <img src={content.groomPicture} alt="Chú Rể" className="h-auto w-[100%] max-w-[400px] object-contain" />
             </div>
             <div className="mt-2 w-[85%]">
-              <img src="/assets/line-x.png" />
+              <img src="./assets/line-x.png" />
             </div>
             <h3 className="mt-2 font-['SVN-Amperzand'] text-3xl">Chú Rể</h3>
           </div>
@@ -155,13 +153,13 @@ export default function FamilySection({ data, content }) {
             <div
               className="overflow-hidden rounded-[15px] border-2 border-[#c9a96e] shadow-md"
               style={{
-                width: '75%',
+                width: '80%',
               }}
             >
               <img src={content.bridePicture} alt="Cô Dâu" className="h-auto w-[100%] max-w-[400px] object-contain" />
             </div>
             <div className="mt-2 w-[85%]">
-              <img src="/assets/line-x.png" />
+              <img src="./assets/line-x.png" />
             </div>
             <h3 className="mt-2 font-['SVN-Amperzand'] text-3xl">Cô Dâu</h3>
           </div>

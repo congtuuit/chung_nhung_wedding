@@ -74,7 +74,7 @@ export default function MusicPlayer({ url, autoPlay }) {
         }`}
       >
         <div className="relative flex items-center justify-center">
-          <img width={55} height={'auto'} src="/assets/music.png" alt="Music icon" className="pointer-events-none select-none object-contain" />
+          <img width={55} height={'auto'} src="./assets/music.png" alt="Music icon" className="pointer-events-none select-none object-contain" />
           {!isPlaying && <div className="absolute h-[2px] rotate-45 rounded" style={{ background: '#6b6b6b', width: 48 }}></div>}
         </div>
       </div>

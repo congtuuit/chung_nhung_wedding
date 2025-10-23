@@ -13,11 +13,11 @@ export default function MapSection({ url, content }) {
           transform: 'rotate(30deg)',
         }}
       >
-        <img src="/assets/Asset 4.png" />
+        <img src="./assets/Asset 4.png" />
       </div>
 
       <div className="m-auto mt-2 mt-8 w-[80%] pl-2 pr-5">
-        <img src="/assets/line_div2.png" />
+        <img src="./assets/line_div2.png" />
       </div>
 
       <FadeAnimation>

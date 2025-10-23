@@ -22,7 +22,7 @@ export default function GiftSection({ content }) {
           transform: 'scaleY(-1) scaleX(-1)',
         }}
       >
-        <img src="/assets/Asset 6.png" />
+        <img src="./assets/Asset 6.png" />
       </div>
 
       <div
@@ -35,12 +35,12 @@ export default function GiftSection({ content }) {
           transform: 'scaleX(-1) rotate(290deg) ',
         }}
       >
-        <img src="/assets/Asset 3.png" />
+        <img src="./assets/Asset 3.png" />
       </div>
 
       {/* decorative line */}
       <div className="m-auto mb-10 w-[80%] pl-2 pr-5">
-        <img src="/assets/line_div4.png" alt="decor line" />
+        <img src="./assets/line_div4.png" alt="decor line" />
       </div>
 
       <FadeAnimation>

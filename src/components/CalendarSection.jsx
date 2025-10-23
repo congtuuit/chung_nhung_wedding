@@ -18,7 +18,7 @@ export default function CalendarSection({ weddingDate, date }) {
               marginTop: '16px',
             }}
           >
-            <img src="/assets/line-x.png" />
+            <img src="./assets/line-x.png" />
           </div>
         </div>
       </FadeAnimation>

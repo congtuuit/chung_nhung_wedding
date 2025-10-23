@@ -34,7 +34,7 @@ export default function ThumbsGallery({ images = [] }) {
                 className="object-contain"
                 loading={i === 0 ? 'eager' : 'lazy'}
                 placeholder="blur"
-                blurDataURL="/assets/placeholder-blur.webp"
+                blurDataURL="./assets/placeholder-blur.webp"
               />
             </div>
           </SwiperSlide>
