@@ -23,7 +23,8 @@ export default function MapSection({ url, content }) {
       <FadeAnimation>
         <div className="text-center font-['SVN-TimesBold']">
           <p className="mb-4 mt-5 text-3xl uppercase">Địa điểm tổ chức</p>
-          <div className="m-auto mt-2 w-[70%] text-2xl">{content.venue.name}</div>
+          <div className="m-auto mt-2 w-[100%] text-2xl">{content.venue.name1}</div>
+          <div className="m-auto mt-2 w-[100%] text-2xl">{content.venue.name2}</div>
           <div className="m-auto mt-2 w-[35%] font-['SVN-Neusa'] text-lg">{content.venue.address}</div>
         </div>
       </FadeAnimation>

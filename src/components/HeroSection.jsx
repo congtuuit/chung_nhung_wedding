@@ -122,7 +122,7 @@ export default function HeroSection({ data, startAnimation }) {
               <TypingEffect
                 startAnimation={true}
                 time={2000}
-                text="(Tức Ngày 19 Tháng 9 Năm Ất Tỵ)"
+                text="(Nhằm Ngày 19 Tháng 9 Năm Ất Tỵ)"
                 className="m-auto mt-1 flex flex-wrap font-[SVN-Desire] text-3xl text-[#2f3a21]"
               />
             </div>
