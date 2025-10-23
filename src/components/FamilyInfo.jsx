@@ -12,7 +12,8 @@ export default function FamilySection({ data, content }) {
       <div
         style={{
           position: 'absolute',
-          left: -47,
+          width: "100%",
+          left: -55,
           zIndex: -1,
         }}
       >

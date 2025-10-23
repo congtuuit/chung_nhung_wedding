@@ -6,9 +6,12 @@ export default function GiftSection({ content }) {
   const [showQR, setShowQR] = useState(false);
 
   return (
-    <section className="relative py-8 text-center" style={{
-      overflow: "hidden"
-    }}>
+    <section
+      className="relative py-8 text-center"
+      style={{
+        overflow: 'hidden',
+      }}
+    >
       <div
         style={{
           position: 'absolute',
@@ -60,7 +63,7 @@ export default function GiftSection({ content }) {
       <FadeAnimation>
         {/* text */}
         <p className="mt-4 pb-10 font-['SVN-Agency'] text-4xl">Rất hân hạnh được đón tiếp</p>
-        <p className="pb-20 font-['SVN-Helga'] text-5xl">Thank you</p>
+        <p className="animate-zoomInOut zoom-small pb-20 font-['SVN-Helga'] text-5xl pt-5">Thank you</p>
       </FadeAnimation>
 
       {/* popup QR */}

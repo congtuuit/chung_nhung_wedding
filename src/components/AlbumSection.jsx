@@ -3,12 +3,12 @@ import FadeAnimation from './FadeAnimation';
 
 export default function AlbumSection({ images }) {
   return (
-    <section className="my-8">
+    <section className="mt-8">
       <div className="m-auto w-[80%] pl-2 pr-5">
         <img src="/assets/line_div3.png" />
       </div>
       <FadeAnimation>
-        <h5 className="mb-5 text-center font-['SVN-Unthrift']" style={{ fontSize: '40px' }}>
+        <h5 className="text-center font-['SVN-Unthrift']" style={{ fontSize: '40px' }}>
           Album hình cưới
         </h5>
       </FadeAnimation>

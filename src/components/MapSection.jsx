@@ -2,7 +2,7 @@ import FadeAnimation from './FadeAnimation';
 
 export default function MapSection({ url, content }) {
   return (
-    <section className="relative py-8 text-center">
+    <section className="relative py-8 pt-0 text-center">
       <div
         style={{
           position: 'absolute',
@@ -22,7 +22,7 @@ export default function MapSection({ url, content }) {
 
       <FadeAnimation>
         <div className="text-center font-['SVN-TimesBold']">
-          <p className="mb-4 mt-4 text-3xl uppercase">Địa điểm tổ chức</p>
+          <p className="mb-4 mt-5 text-3xl uppercase">Địa điểm tổ chức</p>
           <div className="m-auto mt-2 w-[70%] text-2xl">{content.venue.name}</div>
           <div className="m-auto mt-2 w-[35%] font-['SVN-Neusa'] text-lg">{content.venue.address}</div>
         </div>
@@ -44,8 +44,8 @@ export default function MapSection({ url, content }) {
             <b>Xem chỉ đường</b>
           </a>
         </div>
-        <div className="mt-4 overflow-hidden rounded-lg border pl-2 pr-2">
-          <iframe height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src={url} className="w-full" />
+        <div className="mt-4 overflow-hidden rounded-lg pl-2 pr-2">
+          <iframe className='m-auto' height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src={url} width={"90%"} />
         </div>
       </FadeAnimation>
     </section>
