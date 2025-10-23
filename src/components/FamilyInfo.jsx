@@ -82,7 +82,7 @@ export default function FamilySection({ data, content }) {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="font-['SVN-NeusaBold'] text-2xl uppercase"
+          className="font-['SVN-NeusaBold'] text-xl uppercase"
         >
           <h3>NHÀ TRAI</h3>
           <p className="mt-1">{data.groom.father}</p>
@@ -95,7 +95,7 @@ export default function FamilySection({ data, content }) {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
           viewport={{ once: true }}
-          className="font-['SVN-NeusaBold'] text-2xl uppercase"
+          className="font-['SVN-NeusaBold'] text-xl uppercase"
         >
           <h3>NHÀ GÁI</h3>
           <p className="mt-1">{data.bride.mother}</p>
