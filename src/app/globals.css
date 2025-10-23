@@ -293,10 +293,10 @@ body {
 }
 
 .animate-left-close {
-  animation: leftClose 1s forwards ease-in-out;
+  animation: leftClose 1.5s forwards ease-in-out;
 }
 .animate-right-close {
-  animation: rightClose 1s forwards ease-in-out;
+  animation: rightClose 1.5s forwards ease-in-out;
 }
 
 @media screen and (max-width: 480px) {
@@ -334,6 +334,9 @@ body {
   .brig-bg {
     bottom: -18rem !important;
   }
+  .text-wrap {
+    font-size: 1.1rem;
+  }
 }
 
 /* Điện thoại nhỏ (iPhone SE, Galaxy A0x) */
@@ -347,6 +350,9 @@ body {
 @media screen and (max-width: 360px) {
   .brig-bg {
     bottom: -13rem !important;
+  }
+   .text-wrap {
+    font-size: 1rem;
   }
 }
 

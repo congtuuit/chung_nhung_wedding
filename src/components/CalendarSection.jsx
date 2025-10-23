@@ -11,7 +11,7 @@ export default function CalendarSection({ weddingDate, date }) {
     <section className="">
       <FadeAnimation>
         <div className="flex pl-5">
-          <h4 className="font-['SVN-NeusaBold'] text-2xl uppercase">Tiệc mừng lễ thành hôn</h4>
+          <h4 className="font-['SVN-NeusaBold'] text-2xl uppercase text-wrap">Tiệc mừng lễ thành hôn</h4>
           <div
             className="m-auto w-[52%] pl-2 pr-5"
             style={{

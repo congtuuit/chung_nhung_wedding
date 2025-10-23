@@ -2,6 +2,10 @@
 
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
+import SaveTheDate from './SaveTheDate';
+import { LettersPullDown } from './animations/LettersPullDown';
+import NamesSection from './NamesSection';
+import { TypingEffect } from './animations/TypingEffect';
 
 export default function HeroSection({ data, startAnimation }) {
   const fadeUp = useAnimation();
@@ -71,64 +75,78 @@ export default function HeroSection({ data, startAnimation }) {
         <img src="./assets/Asset 9.png" />
       </div>
 
-      <motion.div initial={{ opacity: 0, y: 40 }} animate={fadeUp} className="relative" style={{ width: '100%' }}>
+      {/* <motion.div initial={{ opacity: 0, y: 40 }} animate={fadeUp} className="relative" style={{ width: '100%' }}>
         <p className="mb-8 mt-16 font-['SVN-Desire'] text-4xl">Save The Date</p>
-      </motion.div>
+      </motion.div> */}
 
+      <SaveTheDate startAnimation />
       <div
         style={{
           minHeight: '320px',
         }}
       >
         {/* Nội dung chữ chính */}
-        <motion.div initial={{ opacity: 0, y: 40 }} animate={fadeUp} className="relative z-10" style={{ width: '85%' }}>
+        {/* <motion.div initial={{ opacity: 0, y: 40 }} animate={fadeUp} className="relative z-10" style={{ width: '85%' }}>
           <h1 className="text-left font-['SVN-VeryBerry'] text-5xl leading-tight">{data.groom}</h1>
           <p className="mb-1 mt-1 font-['SVN-VeryBerry'] text-4xl">&</p>
           <h1 className="text-right font-['SVN-VeryBerry'] text-5xl leading-tight">{data.bride}</h1>
-        </motion.div>
+        </motion.div> */}
+
+        <NamesSection data={data} startAnimation time={2000} />
 
         {/* Ngày giờ */}
-        <motion.div initial={{ opacity: 0, y: 40 }} animate={fadeUp} className="relative z-10 max-w-3xl pb-5">
+        <div className="relative z-10 max-w-3xl pb-5">
           <div className="mt-8 text-center font-['SVN-AbrilFatface']">
-            <div className="flex items-start justify-center gap-6 md:gap-10">
-              <div className="flex flex-col items-end">
-                <p className="text-3xl font-bold leading-none">{data.timeText}</p>
-                <p className="mt-2 text-3xl font-bold leading-none">THỨ 7</p>
-              </div>
-              <div className="w-[3px] bg-[#2f3a21]" style={{ height: '70px' }}></div>
-              <div className="flex flex-col items-start leading-none">
-                <div className="flex items-start">
-                  <p className="text-6xl font-bold">
-                    {day}.{month}
-                  </p>
-                  <div className="ml-2 flex flex-col text-4xl font-bold leading-tight" style={{ marginTop: '-15px' }}>
-                    <span>{String(year).slice(0, 2)}</span>
-                    <span>{String(year).slice(2)}</span>
+            <motion.div initial={{ opacity: 0, y: 50 }} animate={fadeUp}>
+              <div className="flex items-start justify-center gap-6 md:gap-10">
+                <div className="flex flex-col items-end">
+                  <p className="text-3xl font-bold leading-none">{data.timeText}</p>
+                  <p className="mt-2 text-3xl font-bold leading-none">THỨ 7</p>
+                </div>
+                <div className="w-[3px] bg-[#2f3a21]" style={{ height: '70px' }}></div>
+                <div className="flex flex-col items-start leading-none">
+                  <div className="flex items-start">
+                    <p className="text-6xl font-bold">
+                      {day}.{month}
+                    </p>
+                    <div className="ml-2 flex flex-col text-4xl font-bold leading-tight" style={{ marginTop: '-15px' }}>
+                      <span>{String(year).slice(0, 2)}</span>
+                      <span>{String(year).slice(2)}</span>
+                    </div>
                   </div>
                 </div>
               </div>
+            </motion.div>
+
+            <div className="flex">
+              <TypingEffect
+                startAnimation={true}
+                time={2000}
+                text="(Tức Ngày 19 Tháng 9 Năm Ất Tỵ)"
+                className="m-auto mt-1 flex flex-wrap font-[SVN-Desire] text-3xl text-[#2f3a21]"
+              />
             </div>
-            <p className="mt-1 font-[SVN-Desire] text-3xl text-[#2f3a21]">(Tức Ngày 19 Tháng 9 Năm Ất Tỵ)</p>
           </div>
-        </motion.div>
+        </div>
       </div>
 
       {/* Ảnh cưới */}
       <div className="relative flex w-full justify-center">
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={imageAnim}
+          initial={{ opacity: 0, x: -50 }} // start slightly left
+          animate={{ opacity: 1, x: 0 }} // end at original position
+          transition={{ duration: 3, ease: 'easeOut' }}
           style={{ width: '80%' }}
           className="relative max-w-md overflow-hidden rounded-[44px] border-2 border-[#c9a96e] shadow-md md:max-w-lg lg:max-w-xl"
         >
           <motion.img
-            style={{ height: 500 }}
             src={data.heroImage}
             alt="Ảnh cưới"
             className="h-auto w-full rounded-[40px] object-cover"
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 2, ease: 'easeOut' }}
+            style={{ height: 500 }}
           />
         </motion.div>
 

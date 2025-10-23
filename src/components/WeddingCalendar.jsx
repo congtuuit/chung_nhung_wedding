@@ -40,15 +40,7 @@ export default function WeddingCalendar({ date }) {
               {d ? (
                 isSelected ? (
                   <>
-                    <svg
-                      viewBox="0 0 24 24"
-                      className="animate-zoomInOut zoom-big absolute h-10 w-10 text-red-500"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                    >
-                      <path d="M12 21s-6.5-4.35-9.33-8.16C.84 9.8 2.26 5 6.12 5a4.5 4.5 0 0 1 3.88 2.13A4.5 4.5 0 0 1 13.88 5c3.86 0 5.28 4.8 3.45 7.84C18.5 16.65 12 21 12 21z" />
-                    </svg>
+                    <img className='absolute animate-zoomInOut zoom-medium' src="./assets/heart-2.png" alt='heart'/>
                     <span className="relative z-10 font-bold text-red-600">{d}</span>
                   </>
                 ) : (

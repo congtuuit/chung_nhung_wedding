@@ -63,7 +63,7 @@ export default function GiftSection({ content }) {
       <FadeAnimation>
         {/* text */}
         <p className="mt-4 pb-10 font-['SVN-Agency'] text-4xl">Rất hân hạnh được đón tiếp</p>
-        <p className="animate-zoomInOut zoom-small pb-20 font-['SVN-Helga'] text-5xl pt-5">Thank you</p>
+        <p className="animate-zoomInOut zoom-small pb-20 pt-5 font-['SVN-Helga'] text-5xl">Thank you</p>
       </FadeAnimation>
 
       {/* popup QR */}
@@ -87,7 +87,7 @@ export default function GiftSection({ content }) {
               className="mx-auto"
             />
             <p className="mt-3 text-sm text-gray-500">{content.bankInfo.holderName}</p>
-            <p className="text-sm text-gray-500">
+            <p className="mt-1 font-['SVN-Neusa'] text-sm text-xl text-gray-500">
               <b>{content.bankInfo.number}</b>
             </p>
           </div>

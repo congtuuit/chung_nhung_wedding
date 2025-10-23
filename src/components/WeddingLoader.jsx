@@ -25,7 +25,7 @@ export default function WeddingLoader({ startProcessHide, onFinish }) {
     <div className="loader-background">
       <div
         style={{
-          zIndex: 100,
+          zIndex: 110,
         }}
         className="fixed inset-0 flex h-screen w-full items-center justify-center"
       >
@@ -34,15 +34,34 @@ export default function WeddingLoader({ startProcessHide, onFinish }) {
             <div>
               <div className="heart-loader m-auto"></div>
               <p className="mt-4 text-3xl text-pink-600" style={{ fontFamily: "'SVN-Helga', serif" }}>
-                Hân hạnh chào đón bạn...
+                Hân hạnh chào đón...
               </p>
             </div>
           )}
         </div>
       </div>
 
-      {/* Hai nửa màn hình */}
-      <div className={`screen-half left-half ${closing ? 'animate-left-close' : ''}`} onAnimationEnd={handleAnimationEnd}></div>
+      <div
+        style={{
+          zIndex: 100,
+        }}
+        className={`screen-half left-half relative ${closing ? 'animate-left-close' : ''}`}
+        onAnimationEnd={handleAnimationEnd}
+      >
+        <img
+          style={{
+            width: '80px',
+            top: '42%',
+            height: 'auto',
+            right: '-35px',
+            opacity: closing ? 1 : 0, // <-- chỉ hiện khi closing = true
+            transition: 'opacity 0.5s ease', // <-- thêm hiệu ứng mượt
+          }}
+          className="absolute"
+          src="./assets/mark.png"
+          alt=""
+        />
+      </div>
       <div className={`screen-half right-half ${closing ? 'animate-right-close' : ''}`} onAnimationEnd={handleAnimationEnd}></div>
     </div>
   );

@@ -59,9 +59,9 @@
   "heroImage": "./images/1.webp",
   "bankInfo": {
     "image": "./images/qr-bank.jpg",
-    "number": "0123456789",
+    "number": "0224153659999",
     "bankName": "Vietcombank",
-    "holderName": "Trần Văn Chung"
+    "holderName": "TRAN VAN CHUNG"
   },
-  "mp3Url": "https://statics.pancake.vn/web-media/5e/ee/bf/4a/afa10d3bdf98ca17ec3191ebbfd3c829d135d06939ee1f1b712d731d-w:0-h:0-l:2938934-t:audio/mpeg.mp3"
+  "mp3Url": "./audios/mai-mai-ben-nhau-noo.mp3"
 }
